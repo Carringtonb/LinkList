@@ -24,7 +24,11 @@ namespace LinkedList.Classes
             Head = node;
         }
 
-        // includes method
+        /// <summary>
+        /// Traverses the link list searching for a value by checking every subsequent node for the value 'NULL'
+        /// </summary>
+        /// <param name="Desired node value"></param>
+        /// <returns>Boolean</returns>
         public bool Includes(int value)
         {
             // set c = h
@@ -45,7 +49,10 @@ namespace LinkedList.Classes
 
             return false;
         }
-
+        /// <summary>
+        /// Stringifies every value in the LinkList and returns the value. With the final value always returning "NULL"
+        /// </summary>
+        /// <returns>A list of values, followed by "NULL"</returns>
         public override string ToString()
         {
             Current = Head;
