@@ -1,0 +1,3 @@
+/Users/carringtonbeard/codefellows/401/LinkList/obj/Debug/netcoreapp3.1/LinkList.csprojAssemblyReference.cache
+/Users/carringtonbeard/codefellows/401/LinkList/obj/Debug/netcoreapp3.1/LinkList.AssemblyInfoInputs.cache
+/Users/carringtonbeard/codefellows/401/LinkList/obj/Debug/netcoreapp3.1/LinkList.AssemblyInfo.cs
