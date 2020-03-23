@@ -10,12 +10,10 @@ namespace XUnitTestProject1
         [Fact]
         public void NodeClassHasValueProperty()
         {
-            // Arrange Act
-            // looking for the class named Node. 
-            // instantiate an object from the Node Class. 
+    
             Node node = new Node();
 
-            // Assert
+    
             Assert.IsType<int>(node.Value);
         }
 
@@ -86,32 +84,29 @@ namespace XUnitTestProject1
         [Fact]
         public void CanFindNodeWithValueInLL()
         {
-            // Arrange
+    
             Linklist ll = new Linklist();
             ll.Insert(10);
             ll.Insert(20);
             ll.Insert(30);
             ll.Insert(42);
 
-            // Act
             bool exists = ll.Includes(30);
 
-            // Assert
-            // method call will be true
             Assert.True(exists);
         }
 
         [Fact]
         public void CannotFindNodewithValueinLL()
         {
-            // Arrange
+     
             Linklist ll = new Linklist();
             ll.Insert(10);
             ll.Insert(20);
             ll.Insert(30);
             ll.Insert(42);
 
-            // Act
+  
             bool exists = ll.Includes(32);
 
             Assert.False(exists);
@@ -120,14 +115,13 @@ namespace XUnitTestProject1
         [Fact]
         public void CanFindHeadValueSuccessfullyInLL()
         {
-            // Arrange
+      
             Linklist ll = new Linklist();
             ll.Insert(10);
             ll.Insert(20);
             ll.Insert(30);
             ll.Insert(42);
 
-            // Act
             bool exists = ll.Includes(42);
             Assert.True(exists);
 
@@ -142,7 +136,7 @@ namespace XUnitTestProject1
             ll.Insert(30);
             ll.Insert(42);
 
-            // Act
+  
             bool exists = ll.Includes(10);
             Assert.True(exists);
         }
@@ -150,19 +144,19 @@ namespace XUnitTestProject1
         [Fact]
         public void CanConvertLinkListToString()
         {
-            // Arrange
+       
             Linklist ll = new Linklist();
             ll.Insert(10);
             ll.Insert(20);
             ll.Insert(30);
             ll.Insert(42);
 
-            // Act 
-            string allyson = ll.ToString();
+     
+            string carrington = ll.ToString();
 
             string expected = $"42 -> 30 -> 20 -> 10 -> NULL";
             // Assert
-            Assert.Equal(expected, allyson);
+            Assert.Equal(expected, carrington);
 
         }
     }

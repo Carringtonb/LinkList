@@ -1966,6 +1966,9 @@
       "LinkList/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "xUnit": "2.4.1"
+        },
         "compile": {
           "bin/placeholder/LinkList.dll": {}
         },
@@ -6669,5 +6672,16 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: xUnit from 2.4.1 to 2.4.0. Reference the package directly from the project to select a different version. \n XUnitTestProject1 -> LinkList -> xUnit (>= 2.4.1) \n XUnitTestProject1 -> xunit (>= 2.4.0)",
+      "libraryId": "xUnit",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
